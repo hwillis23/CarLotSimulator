@@ -72,7 +72,7 @@ namespace CarLotSimulator
             //carLot.ParkingLot.Add(landRover);
             //Instanciate the a Carlot at the beginning of the program and as you create a car add the car to the list.
             //At the end, iterate through the list printing each of car's Year, Make, and Model to the console
-       
+            Console.WriteLine($"Added cars: {CarLot.NumberOfCars}");
             foreach(var car in carLot.ParkingLot)
             {
                 Console.WriteLine($"Year: {car.Year} Make:{car.Make} and Model: {car.Model}");

@@ -8,6 +8,8 @@ namespace CarLotSimulator
     {
         public Car()  //Constructor -DONE
         {
+            CarLot.NumberOfCars++;
+
         }
 
         public Car(int year, string model, string make, string engineNoise, string honkNoise, bool isDriveable)
@@ -17,7 +19,8 @@ namespace CarLotSimulator
             Model = model;
             EngineNoise = engineNoise;
             HonkNoise = honkNoise;
-            IsDriveable = isDriveable;  
+            IsDriveable = isDriveable;
+            CarLot.NumberOfCars++;   
 
         }
 
